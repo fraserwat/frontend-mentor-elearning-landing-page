@@ -1,0 +1,24 @@
+.course {
+    position: relative;
+    padding: $quarter-note;
+    background-color: $white;
+    box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.05);
+}
+.course-logo {
+    position: absolute;
+    left: $quarter-note;
+    top: $quarter-note * -1;
+}
+.course > p {
+    font-size: 1rem;
+    margin-bottom: $eighth-note;
+}
+.course > a {
+    color: $pink-bright;
+    font-size: $sixteenth-note;
+    font-weight: 700;
+    text-decoration: none;
+}
+.course > a:hover {
+    color: #FFA7C3;
+}

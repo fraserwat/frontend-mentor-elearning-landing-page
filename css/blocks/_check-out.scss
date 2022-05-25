@@ -1,0 +1,4 @@
+.check-out {
+    padding: $quarter-note;
+    padding-top: clamp($quarter-note, 4.5vw, $whole-note-ext);
+}

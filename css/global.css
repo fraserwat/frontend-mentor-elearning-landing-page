@@ -1,0 +1,280 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html, body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input, button, textarea, select {
+  font: inherit;
+  border: none;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  color: #83869A;
+}
+
+picture > img {
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 35.154px;
+}
+
+@media screen and (min-width: 600px) {
+  section.hero {
+    margin-bottom: clamp(1px, 10vw, 12rem);
+  }
+}
+
+.subsection > picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .hero {
+    position: relative;
+  }
+  .subsection:last-of-type {
+    width: auto;
+  }
+  .subsection > picture {
+    z-index: 0;
+    position: absolute;
+    max-width: 100%;
+    top: 0px;
+    right: 0px;
+    -webkit-transform: translateX(40%) translateY(-50%);
+            transform: translateX(40%) translateY(-50%);
+  }
+}
+
+.course-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 43.938px;
+  margin-bottom: 43.938px;
+}
+
+.check-out {
+  padding: 28.134px;
+  padding-top: clamp(28.134px, 4.5vw, 54.936px);
+}
+
+.course {
+  position: relative;
+  padding: 28.134px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.05);
+          box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.05);
+}
+
+.course-logo {
+  position: absolute;
+  left: 28.134px;
+  top: -28.134px;
+}
+
+.course > p {
+  font-size: 1rem;
+  margin-bottom: 22.5px;
+}
+
+.course > a {
+  color: #F74780;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.course > a:hover {
+  color: #FFA7C3;
+}
+
+.footer {
+  padding-block: 35.154px;
+}
+
+.button {
+  z-index: 2;
+  cursor: pointer;
+  font-weight: 700;
+  padding-inline: 28.134px;
+  padding-block: 14.4px;
+}
+
+.gradient-pink-bg {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#F02AA6), to(#FF6F48));
+  background-image: linear-gradient(to top, #F02AA6, #FF6F48);
+}
+
+.gradient-pink-bg.button:hover {
+  opacity: 50%;
+}
+
+.gradient-purple-bg {
+  background-color: #FFF;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4851FF), to(#F02AA6));
+  background-image: linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+
+.gradient-purple-bg.button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4851FF88), to(#F02AA688));
+  background-image: linear-gradient(to bottom, #4851FF88, #F02AA688);
+}
+
+.flow > * + * {
+  margin-top: 18px;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .flex-between-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.flex-even > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.bg-dark {
+  background-color: #13183F;
+}
+
+.bg-dark.button:hover {
+  background-color: #666CA3;
+}
+
+.bg-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F0F1FF));
+  background-image: linear-gradient(to bottom, #FFF, #F0F1FF 100%);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.font-white,
+.font-white > * {
+  color: #FFF;
+}
+
+.circular {
+  border-radius: 999px;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -ms-grid-columns: (20rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 20rem);
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.max-width-1100 {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.outer-padding {
+  padding: clamp(18px, 6vw, 43.938px);
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+  color: #13183F;
+}
+
+h1 {
+  font-size: clamp(43.938px, 4.5vw, 54.936px);
+}
+
+h2 {
+  font-size: clamp(22.5px, 3vw, 35.154px);
+}
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,7 @@
+.gradient-purple-bg {
+    background-color: $white;
+    background-image: linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+.gradient-purple-bg.button:hover {
+    background-image: linear-gradient(to bottom, #4851FF88, #F02AA688);
+}

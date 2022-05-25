@@ -1,0 +1,53 @@
+@import "variables";
+@import "reset";
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: $sixteenth-note;
+    color: $grey;
+}
+
+picture > img {
+    width: 100%;
+  }
+  
+// IMPORT BLOCKS
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/subsection";
+@import "blocks/course-container";
+@import "blocks/check-out";
+@import "blocks/course";
+@import "blocks/footer";
+@import "blocks/button";
+
+// IMPORT UTILITIES
+@import "utility/gradient-pink-bg";
+@import "utility/gradient-purple-bg";
+@import "utility/flow";
+@import "utility/full-bleed";
+@import "utility/flex-between";
+@import "utility/flex-even";
+@import "utility/bg-dark";
+@import "utility/bg-container";
+@import "utility/font-white";
+@import "utility/circular";
+@import "utility/rounded";
+@import "utility/grid";
+@import "utility/max-width-1100";
+@import "utility/outer-padding";
+
+// Heading styles
+
+h1, h2, h3 {
+    font-weight: 800;
+    color: $blue-dark;
+}
+
+h1 {
+    font-size: clamp($whole-note, 4.5vw, $whole-note-ext);
+}
+
+h2 {
+    font-size: clamp($eighth-note, 3vw, $half-note);
+}

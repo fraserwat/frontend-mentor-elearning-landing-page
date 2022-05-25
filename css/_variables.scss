@@ -1,0 +1,19 @@
+// BREAK POINTS
+$tablet-breakpoint: 600px;
+
+// TYPE SCALE
+$sixteenth-note: 18px;
+$eighth-note: $sixteenth-note * 1.25;
+$quarter-note: $sixteenth-note * 1.563;
+$half-note: $sixteenth-note * 1.953;
+$whole-note: $sixteenth-note * 2.441;
+$whole-note-ext: $sixteenth-note * 3.052;
+
+// COLORS
+
+$blue-grey: #666CA3;
+$blue-dark: #13183F;
+$grey: #83869A;
+$pink-bright: #F74780;
+$pink-light: #FFA7C3;
+$white: #FFF;

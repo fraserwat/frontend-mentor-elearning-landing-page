@@ -1,0 +1,7 @@
+.button {
+    z-index: 2;
+    cursor: pointer;
+    font-weight: 700;
+    padding-inline: $quarter-note;
+    padding-block: $sixteenth-note * 0.8;
+}

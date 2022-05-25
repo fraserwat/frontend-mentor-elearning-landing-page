@@ -1,0 +1,21 @@
+.subsection > picture {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+    .hero {
+        position: relative;
+    }
+    .subsection:last-of-type {
+        width: auto;
+    }
+    .subsection > picture {
+        z-index: 0;
+        position: absolute;
+        max-width: 100%;
+        top: 0px;
+        right: 0px;
+        transform: translateX(40%) translateY(-50%);
+    }    
+}
