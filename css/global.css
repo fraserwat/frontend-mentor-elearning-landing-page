@@ -228,6 +228,7 @@ picture > img {
   background-image: linear-gradient(to bottom, #FFF, #F0F1FF 100%);
   background-repeat: no-repeat;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 .font-white,
