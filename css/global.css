@@ -69,7 +69,7 @@ picture > img {
 
 @media screen and (min-width: 600px) {
   section.hero {
-    margin-bottom: clamp(1px, 10vw, 12rem);
+    margin-block: clamp(1px, 10vw, 12rem);
   }
 }
 
